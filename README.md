@@ -1,5 +1,6 @@
 ## Gif Search
 
-to tired to add env variables for pages
+too tired to add env variables for the gh pages
+but i assure you this thing works
 
 ![image](https://github.com/user-attachments/assets/effb641a-bfa1-4fae-a249-fefcd29afb9b)
