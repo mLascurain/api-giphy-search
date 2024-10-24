@@ -28,14 +28,10 @@ inputUser.addEventListener("keydown", function (e) {
 });
 
 // Hace una consulta a la api y devuelve los valores que obtiene de ella
-const llamarAPI = (url) => {
-  fetch(url, { mode: "cors" })
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (response) {
-      mostrarGif(response);
-    });
+const llamarAPI = async (url) => {
+  const response = await fetch(url, { mode: "cors" });
+  const responseJSON = await response.json();
+  mostrarGif(responseJSON);
 };
 
 // Modifica elementos del DOM para hacer visible para el usuario el gif
